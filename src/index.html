@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast Application</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="h-screen">
+    <!-- Header -->
+    <header class="flex justify-center items-center bg-blue-600 h-24">
+        <h2 class="text-2xl text-white">Weather Forecast Application</h2>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex bg-blue-200 h-screen">
+        <section class="p-20">
+            <!-- Form Section -->
+            <div class="border-2 border-black p-4">
+                <form action="">
+                    <label for="weatherInput" class="font-bold">Enter the City Name</label><br>
+                    <input placeholder="Enter the city name" type="text" name="weather" id="weatherInput" class="border-2 w-96 h-11 border-black my-2 px-3"><br>
+                    <button type="button" class="bg-blue-400 px-10 w-96 my-4 h-10 text-white text-lg">Search</button>
+                </form>
+
+                <!-- Divider -->
+                <div class="flex items-center justify-center">
+                    <div class="flex-1 border-t-2 border-black"></div>
+                    <span class="mx-4 text-gray-700">OR</span>
+                    <div class="flex-1 border-t-2 border-black"></div>
+                </div>
+
+                <!-- Use Current Location Button -->
+                <button type="button" class="bg-gray-700 px-10 w-96 my-4 h-10 text-white text-lg">Use current location</button>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section class="flex-1">
+            <div class="h-40 bg-blue-600 flex items-center justify-between mr-10 mt-5 rounded-lg">
+                <div>
+                   <h2>Location of the Data</h2>
+                   <h3>Sample</h3>
+                   <h3>Wind</h3>
+                </div>
+            </div>
+
+            <h3 class="mt-4 ml-5">5 Days Forecast</h3>
+            <div class="h-40  flex justify-start gap-4 overflow-x-auto whitespace-nowrap mr-10 mt-5 rounded-lg ">
+                <div class="h-40 w-40 rounded-xl bg-gray-600  text-white">
+                    Dad 1
+                </div>
+                <div class="h-40 w-40 rounded-xl bg-gray-600  text-white">
+                    Dad 2
+                </div>
+                <div class="h-40 w-40 rounded-xl bg-gray-600  text-white">
+                    Dad 3
+                </div>
+                <div class="h-40 w-40 rounded-xl bg-gray-600  text-white">
+                    Dad 4
+                </div>
+                <div class="h-40 w-40 rounded-xl bg-gray-600  text-white">
+                    Dad 5
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
